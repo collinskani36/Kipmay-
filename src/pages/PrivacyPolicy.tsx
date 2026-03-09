@@ -24,19 +24,19 @@ type Section = {
 
 const PrivacyPolicy = () => {
   useEffect(() => {
-    document.title = "Privacy Policy \u2014 Chattify";
+    document.title = "Privacy Policy \u2014 KipmayAI";
   }, []);
 
   const sections: Section[] = [
     {
       title: "1. Introduction",
       content:
-        "Chattify is a product of Kipmay Technologies (\u201cwe,\u201d \u201cour,\u201d or \u201cus\u201d), a company duly registered and operating under the laws of Kenya. We provide AI-powered WhatsApp automation services that enable businesses (\u201cClients\u201d) to automate customer interactions, manage conversations through an intelligent dashboard, and deliver consistent, high-quality customer experiences. This Privacy Policy governs the collection, processing, storage, sharing, and deletion of personal data across all Chattify services. It applies to business clients who subscribe to Chattify; end users (customers of our business clients) who interact with AI-powered WhatsApp bots we deploy; and visitors to our website and any other individuals whose data we process in connection with our services. By using our services, you acknowledge that you have read and understood this Privacy Policy.",
+        "KipmayAI is a product of Kipmay Technologies (\u201cwe,\u201d \u201cour,\u201d or \u201cus\u201d), a company duly registered and operating under the laws of Kenya. We provide AI-powered WhatsApp automation services that enable businesses (\u201cClients\u201d) to automate customer interactions, manage conversations through an intelligent dashboard, and deliver consistent, high-quality customer experiences. This Privacy Policy governs the collection, processing, storage, sharing, and deletion of personal data across all KipmayAI services. It applies to business clients who subscribe to KipmayAI; end users (customers of our business clients) who interact with AI-powered WhatsApp bots we deploy; and visitors to our website and any other individuals whose data we process in connection with our services. By using our services, you acknowledge that you have read and understood this Privacy Policy.",
     },
     {
       title: "2. Who We Are & Our Role as Data Controller",
       content:
-        "Kipmay Technologies operates Chattify as the primary Data Controller for data collected through our platform. This means we determine the purposes and means of processing personal data. In circumstances where we process data on behalf of our business clients, we may also act as a Data Processor under their instruction. Company: Kipmay Technologies | Product: Chattify | Contact: helpdesk@kipmay.org | Jurisdiction: Republic of Kenya.",
+        "Kipmay Technologies operates KipmayAI as the primary Data Controller for data collected through our platform. This means we determine the purposes and means of processing personal data. In circumstances where we process data on behalf of our business clients, we may also act as a Data Processor under their instruction. Company: Kipmay Technologies | Product: KipmayAI | Contact: helpdesk@KipmayAI.org | Jurisdiction: Republic of Kenya.",
     },
     {
       title: "3. What Data We Collect",
@@ -190,7 +190,7 @@ const PrivacyPolicy = () => {
     {
       title: "10. AI Processing & Anthropic Claude",
       content:
-        "Chattify uses Anthropic's Claude AI as the core intelligence layer for generating automated replies. Message content and relevant conversation context are transmitted to Anthropic's API via an encrypted connection. Claude processes the message and returns a response, which is then sent back to the end user via WhatsApp. We do not use end user conversations to train Anthropic's foundation models without explicit consent. Any use of conversation data for AI improvement purposes will be done using anonymized, aggregated data only, and subject to obtaining appropriate consents.",
+        "KipmayAI uses Anthropic's Claude AI as the core intelligence layer for generating automated replies. Message content and relevant conversation context are transmitted to Anthropic's API via an encrypted connection. Claude processes the message and returns a response, which is then sent back to the end user via WhatsApp. We do not use end user conversations to train Anthropic's foundation models without explicit consent. Any use of conversation data for AI improvement purposes will be done using anonymized, aggregated data only, and subject to obtaining appropriate consents.",
     },
     {
       title: "11. International Data Transfers",
@@ -209,7 +209,7 @@ const PrivacyPolicy = () => {
         "Right to Withdraw Consent: Where processing is based on consent, withdraw that consent at any time without affecting prior lawful processing.",
       ],
       footer:
-        'To exercise any of these rights, please contact us at helpdesk@kipmay.org with the subject line "Data Rights Request." We will respond within 30 days. Business clients can also export conversation data directly from the Chattify dashboard.',
+        'To exercise any of these rights, please contact us at helpdesk@Kipmay.org with the subject line "Data Rights Request." We will respond within 30 days. Business clients can also export conversation data directly from the KipmayAI dashboard.',
     },
     {
       title: "13. Business Clients' Responsibilities",
@@ -217,19 +217,19 @@ const PrivacyPolicy = () => {
         "Ensuring you have a lawful basis (including user consent where required) before deploying automated WhatsApp bots to your customers;",
         "Providing your own privacy notice to your end users that discloses the use of AI-powered automation;",
         "Complying with WhatsApp's Business Policy and Meta's Terms of Service;",
-        "Not using Chattify to collect or process sensitive categories of personal data (e.g., health, financial, or children's data) without additional safeguards and written agreement with us;",
-        "Reporting any suspected data breaches or misuse to us immediately at helpdesk@kipmay.org.",
+        "Not using KipmayAI to collect or process sensitive categories of personal data (e.g., health, financial, or children's data) without additional safeguards and written agreement with us;",
+        "Reporting any suspected data breaches or misuse to us immediately at helpdesk@Kipmay.org.",
       ],
     },
     {
       title: "14. Children's Privacy",
       content:
-        "Chattify is intended exclusively for use by businesses and individuals aged 18 and above. We do not knowingly collect or process personal data of children under 18. If you believe we have inadvertently collected data from a minor, please contact us at helpdesk@kipmay.org immediately and we will take prompt steps to delete such data.",
+        "KipmayAI is intended exclusively for use by businesses and individuals aged 18 and above. We do not knowingly collect or process personal data of children under 18. If you believe we have inadvertently collected data from a minor, please contact us at helpdesk@KipmayAI.org immediately and we will take prompt steps to delete such data.",
     },
     {
       title: "15. Changes to This Privacy Policy",
       content:
-        'We may update this Privacy Policy from time to time to reflect changes in our services, technology, or legal obligations. When we make material changes, we will notify business clients via email (at the registered contact address) and update the "Last Updated" date at the top of this document. Continued use of Chattify after changes are posted constitutes acceptance of the updated policy.',
+        'We may update this Privacy Policy from time to time to reflect changes in our services, technology, or legal obligations. When we make material changes, we will notify business clients via email (at the registered contact address) and update the "Last Updated" date at the top of this document. Continued use of KipmayAI after changes are posted constitutes acceptance of the updated policy.',
     },
     {
       title: "16. Governing Law & Dispute Resolution",
@@ -293,12 +293,12 @@ const PrivacyPolicy = () => {
         <div className="mt-4 rounded-lg border border-border bg-muted/30 p-4 space-y-1 text-sm text-muted-foreground">
           <p>
             <span className="font-semibold text-foreground">Company:</span>{" "}
-            Kipmay Technologies (Chattify)
+            Kipmay Technologies (KipmayAI)
           </p>
           <p>
             <span className="font-semibold text-foreground">Email:</span>{" "}
-            <a href="mailto:helpdesk@kipmay.org" className="text-blue-500 hover:underline">
-              helpdesk@kipmay.org
+            <a href="mailto:helpdesk@Kipmay.org" className="text-blue-500 hover:underline">
+              helpdesk@Kipmay.org
             </a>
           </p>
           <p>
@@ -346,7 +346,7 @@ const PrivacyPolicy = () => {
 
             <motion.div variants={fadeInUp} className="glass-card p-8 sm:p-12 space-y-10">
               <p className="text-muted-foreground leading-relaxed border-l-2 border-blue-500 pl-4 italic">
-                Kipmay Technologies operates Chattify and is fully responsible as Data
+                Kipmay Technologies operates KipmayAI and is fully responsible as Data
                 Controller for all personal data processed through our platform. We are
                 committed to transparency, security, and compliance with the Kenya Data
                 Protection Act, 2019 and applicable international data protection law.
@@ -364,7 +364,7 @@ const PrivacyPolicy = () => {
 
               <div className="pt-4 text-center text-xs text-muted-foreground space-y-1">
                 <p>&copy; 2026 Kipmay Technologies. All rights reserved.</p>
-                <p>Chattify is a product of Kipmay Technologies, operating under the laws of Kenya.</p>
+                <p>KipmayAI is a product of Kipmay Technologies, operating under the laws of Kenya.</p>
               </div>
             </motion.div>
           </motion.div>

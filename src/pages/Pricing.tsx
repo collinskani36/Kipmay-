@@ -83,7 +83,7 @@ const pricingFaqs = [
 
 const Pricing = () => {
   const [isAnnual, setIsAnnual] = useState(false);
-  useEffect(() => { document.title = "Pricing — Chattify"; }, []);
+  useEffect(() => { document.title = "Pricing — KipmayAI"; }, []);
 
   return (
     <div className="min-h-screen pt-16">

@@ -38,7 +38,7 @@ const caseStudies = [
 ];
 
 const UseCases = () => {
-  useEffect(() => { document.title = "Use Cases — Chattify"; }, []);
+  useEffect(() => { document.title = "Use Cases — KipmayAI"; }, []);
 
   return (
     <div className="min-h-screen pt-16">

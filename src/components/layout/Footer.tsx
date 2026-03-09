@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link to="/" className="flex items-center gap-2 text-xl font-bold text-foreground mb-4">
-              Chattify
+              KipmayAI
               <span className="w-2 h-2 rounded-full bg-primary inline-block" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">© {new Date().getFullYear()} Chattify. All rights reserved.</p>
+          <p className="text-muted-foreground text-sm">© {new Date().getFullYear()} KipmayAI. All rights reserved.</p>
           <a
             href="https://wa.me/254700000000"
             target="_blank"

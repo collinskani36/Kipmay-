@@ -35,13 +35,13 @@ const features = [
 ];
 
 const testimonials = [
-  { quote: "Chattify has completely transformed how we handle enquiries. We went from missing 60% of messages to responding to every single one instantly.", name: "Aisha M.", business: "Marketting director, Eldoret", rating: 5 },
+  { quote: "KipmayAI has completely transformed how we handle enquiries. We went from missing 60% of messages to responding to every single one instantly.", name: "Aisha M.", business: "Marketting director, Eldoret", rating: 5 },
   { quote: "Our spa bookings increased by 40% in the first month. The AI handles menu questions and reservations perfectly.", name: "James K.", business: "Spa Manager, Eldoret", rating: 5 },
   
 ];
 
 const Home = () => {
-  useEffect(() => { document.title = "Chattify — AI WhatsApp Bots for Business"; }, []);
+  useEffect(() => { document.title = "KipmayAI — AI WhatsApp Bots for Business"; }, []);
 
   return (
     <div className="min-h-screen">

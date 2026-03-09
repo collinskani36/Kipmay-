@@ -22,7 +22,7 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", business: "", email: "", phone: "", type: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  useEffect(() => { document.title = "Contact — Chattify"; }, []);
+  useEffect(() => { document.title = "Contact — KipmayAI"; }, []);
 
   const validate = () => {
     const errs: Record<string, string> = {};
@@ -120,7 +120,7 @@ const Contact = () => {
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="lg:col-span-2 space-y-8">
               <motion.div variants={fadeInUp} className="glass-card p-8 space-y-6">
                 {[
-                  { icon: Mail, label: "Email", value: "hello@Chattify.co.ke/kani36@gmail.com" },
+                  { icon: Mail, label: "Email", value: "helpdesk@kipmay.co.ke/kani36@gmail.com" },
                   { icon: Phone, label: "Phone", value: "+254796911236" },
                   { icon: MapPin, label: "Location", value: "Eldoret,Kenya" },
                   { icon: Clock, label: "Response time", value: "Within 24 hours" },

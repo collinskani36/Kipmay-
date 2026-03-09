@@ -47,7 +47,7 @@ const WhatsAppMockup = () => {
           <div className="bg-[hsl(145_65%_25%)] rounded-t-[2rem] px-5 py-3 flex items-center gap-3">
             <div className="w-9 h-9 rounded-full bg-[hsl(0_0%_100%/0.2)] flex items-center justify-center text-foreground text-xs font-bold">AI</div>
             <div>
-              <p className="text-foreground text-sm font-semibold">Chatiffy AI</p>
+              <p className="text-foreground text-sm font-semibold">Kipmay AI</p>
               <p className="text-[hsl(0_0%_100%/0.7)] text-xs">Online</p>
             </div>
           </div>

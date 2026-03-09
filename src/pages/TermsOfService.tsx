@@ -24,25 +24,25 @@ type Section = {
 
 const TermsOfService = () => {
   useEffect(() => {
-    document.title = "Terms of Service \u2014 Chattify";
+    document.title = "Terms of Service \u2014 KipmayAI";
   }, []);
 
   const sections: Section[] = [
     {
       title: "1. Acceptance of Terms",
       content:
-        "By accessing, registering for, or using Chattify (\u201cthe Service\u201d), you (\u201cClient,\u201d \u201cyou,\u201d or \u201cyour\u201d) agree to be legally bound by these Terms of Service (\u201cTerms\u201d) and all policies incorporated by reference, including our Privacy Policy. These Terms constitute a binding legal agreement between you and Kipmay Technologies, the company that owns and operates Chattify.",
+        "By accessing, registering for, or using KipmayAI (\u201cthe Service\u201d), you (\u201cClient,\u201d \u201cyou,\u201d or \u201cyour\u201d) agree to be legally bound by these Terms of Service (\u201cTerms\u201d) and all policies incorporated by reference, including our Privacy Policy. These Terms constitute a binding legal agreement between you and Kipmay Technologies, the company that owns and operates KipmayAI.",
       footer:
         "If you are accepting these Terms on behalf of a company or other legal entity, you represent and warrant that you have the authority to bind that entity. If you do not agree to these Terms, you must not use the Service.",
     },
     {
       title: "2. Definitions",
       items: [
-        "\u201cChattify\u201d or \u201cthe Service\u201d means the AI-powered WhatsApp automation platform operated by Kipmay Technologies;",
-        "\u201cKipmay Technologies\u201d or \u201cwe\u201d means the company registered in Kenya that owns and operates Chattify;",
-        "\u201cClient\u201d or \u201cyou\u201d means the business or individual who subscribes to and uses Chattify;",
+        "\u201cKipmayAI\u201d or \u201cthe Service\u201d means the AI-powered WhatsApp automation platform operated by Kipmay Technologies;",
+        "\u201cKipmay Technologies\u201d or \u201cwe\u201d means the company registered in Kenya that owns and operates KipmayAI;",
+        "\u201cClient\u201d or \u201cyou\u201d means the business or individual who subscribes to and uses KipmayAI;",
         "\u201cEnd User\u201d means a customer or third party who interacts with a WhatsApp bot deployed by a Client through our platform;",
-        "\u201cDashboard\u201d means the Chattify web interface through which Clients manage their bots, view conversations, and configure settings;",
+        "\u201cDashboard\u201d means the KipmayAI web interface through which Clients manage their bots, view conversations, and configure settings;",
         "\u201cAI System\u201d means the artificial intelligence and automation technology, including Anthropic\u2019s Claude API, used to generate automated responses;",
         "\u201cWhatsApp Business API\u201d means Meta Platforms\u2019 official API used for automated WhatsApp messaging;",
         "\u201cContent\u201d means all text, data, files, images, or materials submitted to or processed by the Service.",
@@ -51,7 +51,7 @@ const TermsOfService = () => {
     {
       title: "3. Description of Service",
       content:
-        "Chattify provides AI-powered WhatsApp automation to businesses. Upon subscription, we connect to your WhatsApp Business number via the official WhatsApp Business API and deploy an AI assistant that handles customer conversations on your behalf. The Service includes:",
+        "KipmayAI provides AI-powered WhatsApp automation to businesses. Upon subscription, we connect to your WhatsApp Business number via the official WhatsApp Business API and deploy an AI assistant that handles customer conversations on your behalf. The Service includes:",
       items: [
         "Automated AI responses to incoming WhatsApp messages, powered by Anthropic\u2019s Claude AI;",
         "A real-time dashboard for monitoring conversations, reviewing transcripts, and managing bot settings;",
@@ -77,7 +77,7 @@ const TermsOfService = () => {
         {
           subtitle: "4.2 Account Security",
           content:
-            "You are responsible for maintaining the confidentiality of your account credentials and Dashboard access. You agree to notify us immediately at helpdesk@kipmay.org if you suspect any unauthorized access to your account. Kipmay Technologies is not liable for any loss or damage arising from your failure to maintain account security.",
+            "You are responsible for maintaining the confidentiality of your account credentials and Dashboard access. You agree to notify us immediately at helpdesk@KipmayAI.org if you suspect any unauthorized access to your account. Kipmay Technologies is not liable for any loss or damage arising from your failure to maintain account security.",
         },
         {
           subtitle: "4.3 Accurate Information",
@@ -89,7 +89,7 @@ const TermsOfService = () => {
     {
       title: "5. Acceptable Use",
       content:
-        "You agree to use Chattify only for lawful business purposes and in accordance with these Terms. You must not use the Service to:",
+        "You agree to use KipmayAI only for lawful business purposes and in accordance with these Terms. You must not use the Service to:",
       items: [
         "Send spam, unsolicited bulk messages, or engage in any form of mass messaging that violates WhatsApp\u2019s Business Policy;",
         "Transmit, store, or process content that is illegal, defamatory, obscene, hateful, or infringes on any third party\u2019s rights;",
@@ -106,9 +106,9 @@ const TermsOfService = () => {
     {
       title: "6. WhatsApp & Meta Platform Compliance",
       content:
-        "Chattify operates via the official WhatsApp Business API provided by Meta Platforms, Inc. By using our Service, you acknowledge and agree that:",
+        "KipmayAI operates via the official WhatsApp Business API provided by Meta Platforms, Inc. By using our Service, you acknowledge and agree that:",
       items: [
-        "Your use of Chattify is subject to WhatsApp\u2019s Business Policy, Commerce Policy, and Meta\u2019s Terms of Service, in addition to these Terms;",
+        "Your use of KipmayAI is subject to WhatsApp\u2019s Business Policy, Commerce Policy, and Meta\u2019s Terms of Service, in addition to these Terms;",
         "You are solely responsible for ensuring your messaging activities comply with WhatsApp\u2019s policies, including obtaining proper opt-in consent from your customers before sending automated messages;",
         "WhatsApp and Meta may change their platform policies, features, or APIs at any time. Kipmay Technologies is not liable for any disruptions to the Service caused by Meta\u2019s platform changes, policy enforcement, or API restrictions;",
         "Your WhatsApp Business Account may be suspended or banned by Meta independently of any action by Kipmay Technologies. We will not be responsible for any such action by Meta;",
@@ -121,7 +121,7 @@ const TermsOfService = () => {
         {
           subtitle: "7.1 Plans & Pricing",
           content:
-            "Chattify is offered on a subscription basis with plans priced in Kenyan Shillings (KES). Details of current plans, features, and pricing are available on our website. We reserve the right to change pricing with at least 30 days\u2019 written notice to existing subscribers. Price changes take effect at the start of your next billing cycle.",
+            "KipmayAI is offered on a subscription basis with plans priced in Kenyan Shillings (KES). Details of current plans, features, and pricing are available on our website. We reserve the right to change pricing with at least 30 days\u2019 written notice to existing subscribers. Price changes take effect at the start of your next billing cycle.",
         },
         {
           subtitle: "7.2 Billing",
@@ -150,12 +150,12 @@ const TermsOfService = () => {
         {
           subtitle: "8.1 Cancellation by Client",
           content:
-            "You may cancel your subscription at any time through your Dashboard or by contacting us at helpdesk@kipmay.org. Cancellation takes effect at the end of the current billing cycle. You will retain full access to the Service until the end of your paid period.",
+            "You may cancel your subscription at any time through your Dashboard or by contacting us at helpdesk@KipmayAI.org. Cancellation takes effect at the end of the current billing cycle. You will retain full access to the Service until the end of your paid period.",
         },
         {
           subtitle: "8.2 Refunds",
           content:
-            "Chattify operates a no-refund policy for partial billing periods. If you cancel mid-cycle, you will not receive a pro-rated refund for the unused portion. Exceptions may be made at our sole discretion in cases of verified technical failure directly attributable to Chattify that rendered the Service materially unusable for an extended period. Requests for exceptional refunds must be submitted within 14 days of the issue.",
+            "KipmayAI operates a no-refund policy for partial billing periods. If you cancel mid-cycle, you will not receive a pro-rated refund for the unused portion. Exceptions may be made at our sole discretion in cases of verified technical failure directly attributable to KipmayAI that rendered the Service materially unusable for an extended period. Requests for exceptional refunds must be submitted within 14 days of the issue.",
         },
         {
           subtitle: "8.3 Cancellation by Kipmay Technologies",
@@ -167,7 +167,7 @@ const TermsOfService = () => {
     {
       title: "9. AI-Generated Content & Accuracy",
       content:
-        "Chattify uses Anthropic\u2019s Claude AI to generate automated responses on behalf of your business. You acknowledge and agree that:",
+        "KipmayAI uses Anthropic\u2019s Claude AI to generate automated responses on behalf of your business. You acknowledge and agree that:",
       items: [
         "AI-generated responses are automated and may not always be accurate, complete, or appropriate for every situation;",
         "You are solely responsible for reviewing and validating the knowledge base, response templates, and AI configuration you provide to train the bot;",
@@ -184,7 +184,7 @@ const TermsOfService = () => {
         "Your use of the Service involves the collection and processing of personal data, including End User conversation data. Our collection and use of this data is governed by our Privacy Policy, which is incorporated into these Terms by reference. By using the Service, you agree to our Privacy Policy. Key points include:",
       items: [
         "Conversation data is stored securely in Google Firebase and is accessible to you via the Dashboard;",
-        "You are responsible for ensuring your use of Chattify complies with the Kenya Data Protection Act, 2019 and any other applicable data protection laws in your jurisdiction;",
+        "You are responsible for ensuring your use of KipmayAI complies with the Kenya Data Protection Act, 2019 and any other applicable data protection laws in your jurisdiction;",
         "You must obtain appropriate consent from your End Users before deploying automated WhatsApp bots on their interactions;",
         "You must provide your End Users with a privacy notice that discloses the use of AI-powered automation.",
       ],
@@ -195,7 +195,7 @@ const TermsOfService = () => {
         {
           subtitle: "11.1 Our Property",
           content:
-            "All software, algorithms, AI models, trademarks, branding, documentation, and technology underlying the Chattify platform are the exclusive property of Kipmay Technologies or our licensors (including Anthropic). Nothing in these Terms grants you any ownership interest in the Service or its underlying technology. You are granted a limited, non-exclusive, non-transferable licence to use the Service solely for your own business purposes during your subscription.",
+            "All software, algorithms, AI models, trademarks, branding, documentation, and technology underlying the KipmayAI platform are the exclusive property of Kipmay Technologies or our licensors (including Anthropic). Nothing in these Terms grants you any ownership interest in the Service or its underlying technology. You are granted a limited, non-exclusive, non-transferable licence to use the Service solely for your own business purposes during your subscription.",
         },
         {
           subtitle: "11.2 Your Content",
@@ -212,7 +212,7 @@ const TermsOfService = () => {
     {
       title: "12. Service Availability & Uptime",
       content:
-        "Kipmay Technologies aims to maintain high availability of the Chattify platform. However, we do not guarantee uninterrupted, error-free, or 100% uptime. The Service may be temporarily unavailable due to:",
+        "Kipmay Technologies aims to maintain high availability of the KipmayAI platform. However, we do not guarantee uninterrupted, error-free, or 100% uptime. The Service may be temporarily unavailable due to:",
       items: [
         "Scheduled maintenance (we will provide advance notice where possible);",
         "Unplanned technical issues, infrastructure failures, or security incidents;",
@@ -244,7 +244,7 @@ const TermsOfService = () => {
         "Your use of the Service or violation of these Terms;",
         "Content you submit, upload, or make available through the Service;",
         "Your violation of WhatsApp\u2019s Business Policy or any applicable law or regulation;",
-        "Any claim by an End User arising from your use of Chattify to automate their conversations;",
+        "Any claim by an End User arising from your use of KipmayAI to automate their conversations;",
         "Any unauthorized use of your account.",
       ],
     },
@@ -342,12 +342,12 @@ const TermsOfService = () => {
         <div className="mt-4 rounded-lg border border-border bg-muted/30 p-4 space-y-1 text-sm text-muted-foreground">
           <p>
             <span className="font-semibold text-foreground">Company:</span>{" "}
-            Kipmay Technologies (Chattify)
+            Kipmay Technologies (KipmayAI)
           </p>
           <p>
             <span className="font-semibold text-foreground">Email:</span>{" "}
-            <a href="mailto:helpdesk@kipmay.org" className="text-blue-500 hover:underline">
-              helpdesk@kipmay.org
+            <a href="mailto:helpdesk@KipmayAI.org" className="text-blue-500 hover:underline">
+              helpdesk@KipmayAI.org
             </a>
           </p>
           <p>
@@ -395,7 +395,7 @@ const TermsOfService = () => {
 
             <motion.div variants={fadeInUp} className="glass-card p-8 sm:p-12 space-y-10">
               <p className="text-muted-foreground leading-relaxed border-l-2 border-blue-500 pl-4 italic">
-                These Terms of Service govern your use of Chattify, an AI-powered WhatsApp
+                These Terms of Service govern your use of KipmayAI, an AI-powered WhatsApp
                 automation platform operated by Kipmay Technologies. Please read them
                 carefully. By using our Service, you agree to be bound by these Terms.
               </p>
@@ -412,7 +412,7 @@ const TermsOfService = () => {
 
               <div className="pt-4 text-center text-xs text-muted-foreground space-y-1">
                 <p>&copy; 2026 Kipmay Technologies. All rights reserved.</p>
-                <p>Chattify is a product of Kipmay Technologies, operating under the laws of Kenya.</p>
+                <p>KipmayAI is a product of Kipmay Technologies, operating under the laws of Kenya.</p>
               </div>
             </motion.div>
           </motion.div>

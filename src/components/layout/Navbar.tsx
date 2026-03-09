@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 text-xl font-bold text-foreground">
-            <span>Chattify</span>
+            <span>KipmayAI</span>
             <span className="w-2 h-2 rounded-full bg-primary inline-block" />
           </Link>
 
