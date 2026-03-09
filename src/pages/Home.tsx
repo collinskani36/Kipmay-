@@ -35,21 +35,20 @@ const features = [
 ];
 
 const testimonials = [
-  { quote: "KipmayAI has completely transformed how we handle enquiries. We went from missing 60% of messages to responding to every single one instantly.", name: "Aisha M.", business: "Marketting director, Eldoret", rating: 5 },
-  { quote: "Our spa bookings increased by 40% in the first month. The AI handles menu questions and reservations perfectly.", name: "James K.", business: "Spa Manager, Eldoret", rating: 5 },
-  
+  { quote: "KipmayAI has completely transformed how we handle enquiries. We went from missing 60% of messages to responding to every single one instantly.", name: "Aisha M.", business: "Marketing Director, Eldoret", rating: 5 },
+  { quote: "Our spa bookings increased by 40% in the first month. The AI handles questions and reservations perfectly.", name: "James K.", business: "Spa Manager, Eldoret", rating: 5 },
 ];
 
 const Home = () => {
   useEffect(() => { document.title = "KipmayAI — AI WhatsApp Bots for Business"; }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Hero */}
       <section className="min-h-screen flex items-center pt-16">
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="container mx-auto px-4 sm:px-6 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div initial="hidden" animate="visible" variants={stagger}>
+            <motion.div initial="hidden" animate="visible" variants={stagger} className="w-full min-w-0">
               <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-card/50 text-sm text-muted-foreground mb-6">
                 🤖 AI-Powered WhatsApp Automation
               </motion.div>
@@ -68,14 +67,19 @@ const Home = () => {
                   <Link to="/how-it-works">See How It Works</Link>
                 </Button>
               </motion.div>
-              <motion.div variants={fadeInUp} className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+              <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 sm:gap-6 text-sm text-muted-foreground">
                 <span>✓ Setup in 48hrs</span>
                 <span>✓ No technical skills</span>
                 <span>✓ Cancel anytime</span>
               </motion.div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="w-full min-w-0 flex justify-center"
+            >
               <WhatsAppMockup />
             </motion.div>
           </div>
@@ -99,7 +103,8 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
             <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Your customers are messaging you right now. <span className="text-gradient">Who's replying?</span>
+              Your customers are messaging you right now.{" "}
+              <span className="text-gradient">Who's replying?</span>
             </motion.h2>
           </motion.div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -124,19 +129,19 @@ const Home = () => {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
             <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Meet your new AI receptionist</motion.h2>
           </motion.div>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4">
             {[
-              { step: "1", title: "Train", desc: "Share your business info" },
+              { step: "1", title: "Contact Us", desc: "Reach out and we onboard you" },
               { step: "2", title: "Connect", desc: "We link to your WhatsApp" },
               { step: "3", title: "Automate", desc: "AI handles everything" },
             ].map((s, i) => (
               <motion.div key={i} variants={fadeInUp} className="flex items-center gap-4">
-                <div className="glass-card p-8 text-center min-w-[200px]">
-                  <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-primary-foreground font-bold text-xl mx-auto mb-4">{s.step}</div>
-                  <h3 className="text-foreground font-semibold text-lg mb-1">{s.title}</h3>
-                  <p className="text-muted-foreground text-sm">{s.desc}</p>
+                <div className="glass-card p-6 text-center w-[180px]">
+                  <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center text-primary-foreground font-bold text-lg mx-auto mb-3">{s.step}</div>
+                  <h3 className="text-foreground font-semibold text-base mb-1">{s.title}</h3>
+                  <p className="text-muted-foreground text-xs">{s.desc}</p>
                 </div>
-                {i < 2 && <ArrowRight className="hidden md:block text-primary" size={24} />}
+                {i < 2 && <ArrowRight className="hidden md:block text-primary flex-shrink-0" size={20} />}
               </motion.div>
             ))}
           </motion.div>
@@ -172,7 +177,7 @@ const Home = () => {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
             <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl font-bold text-foreground mb-4">What our clients say</motion.h2>
           </motion.div>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {testimonials.map((t, i) => (
               <motion.div key={i} variants={fadeInUp} className="glass-card p-8">
                 <div className="flex gap-0.5 mb-4">
@@ -182,8 +187,8 @@ const Home = () => {
                 </div>
                 <p className="text-foreground text-sm leading-relaxed mb-6">"{t.quote}"</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center text-primary-foreground text-sm font-bold">
-                    {t.name.split(" ").map(n => n[0]).join("")}
+                  <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center text-primary-foreground text-sm font-bold flex-shrink-0">
+                    {t.name.split(" ").map((n: string) => n[0]).join("")}
                   </div>
                   <div>
                     <p className="text-foreground text-sm font-medium">{t.name}</p>
