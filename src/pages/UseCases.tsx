@@ -24,7 +24,7 @@ const useCases = [
 const caseStudies = [
   {
     industry: "School in Eldoret",
-    before: "Receptionist spending 3+ hours/day answering the same WhatsApp questions about services and prices.",
+    before: "Secretary spending 3+ hours/day answering the same WhatsApp questions about admission and School fees.",
     after: "AI handles 95% of enquiries instantly. Receptionist focuses on in-person customers and upselling.",
     metric: "95% automated",
   },
