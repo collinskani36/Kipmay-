@@ -54,7 +54,7 @@ const Home = () => {
               </motion.div>
               <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
                 Transform Your Customer Support with{" "}
-                <span className="text-gradient">Intelligent WhatsApp Bots</span>
+                <span className="text-gradient">Intelligent WhatsApp Automation</span>
               </motion.h1>
               <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg">
                 Stop losing customers to unanswered WhatsApp messages. Our AI handles every enquiry instantly, 24/7 — so you never miss a lead again.
