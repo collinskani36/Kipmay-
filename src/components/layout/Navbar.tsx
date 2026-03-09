@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { X, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -17,73 +16,111 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2 text-xl font-bold text-foreground">
-            <span>KipmayAI</span>
-            <span className="w-2 h-2 rounded-full bg-primary inline-block" />
+    <nav className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
+
+      {/* ── Desktop: floating pill navbar ── */}
+      <div className="hidden md:flex justify-center pt-4 px-6 pointer-events-auto">
+        <div className="flex items-center gap-1 bg-background/80 backdrop-blur-xl border border-border rounded-full px-2 py-1.5 shadow-lg">
+
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-1.5 px-3 mr-2">
+            <span className="text-sm font-bold text-foreground tracking-tight">Kipmay</span>
+            <span className="text-sm font-bold text-primary">AI</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" />
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+          {/* Nav tabs */}
+          {navLinks.map((link) => {
+            const active = location.pathname === link.to;
+            return (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                className={`relative px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
+                  active
+                    ? "text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                {link.label}
+                {active && (
+                  <motion.span
+                    layoutId="pill"
+                    className="absolute inset-0 rounded-full gradient-primary"
+                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  />
+                )}
+                <span className="relative z-10">{link.label}</span>
               </Link>
-            ))}
-          </div>
+            );
+          })}
 
-          <div className="hidden md:block">
-            <Button asChild className="gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity">
-              <Link to="/contact">Get Started</Link>
-            </Button>
-          </div>
-
-          <button
-            className="md:hidden text-foreground"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+          {/* CTA */}
+          <Link
+            to="/contact"
+            className="ml-2 px-4 py-1.5 rounded-full text-xs font-semibold gradient-primary text-primary-foreground hover:opacity-90 transition-opacity"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            Get Started
+          </Link>
         </div>
       </div>
 
+      {/* ── Mobile: top bar ── */}
+      <div className="md:hidden flex items-center justify-between px-4 h-14 bg-background/90 backdrop-blur-xl border-b border-border pointer-events-auto">
+        <Link to="/" className="flex items-center gap-1.5">
+          <span className="text-sm font-bold text-foreground">Kipmay</span>
+          <span className="text-sm font-bold text-primary">AI</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" />
+        </Link>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-foreground p-1"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+      </div>
+
+      {/* ── Mobile: dropdown ── */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden overflow-hidden bg-background/95 backdrop-blur-xl border-b border-border"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border px-4 pb-4 pt-2 pointer-events-auto"
           >
-            <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  onClick={() => setIsOpen(false)}
-                  className={`text-sm font-medium py-2 transition-colors ${
-                    location.pathname === link.to ? "text-primary" : "text-muted-foreground"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <Button asChild className="gradient-primary text-primary-foreground font-semibold w-full mt-2">
-                <Link to="/contact" onClick={() => setIsOpen(false)}>Get Started</Link>
-              </Button>
+            {/* Tab-style buttons grid */}
+            <div className="grid grid-cols-3 gap-2 mb-3">
+              {navLinks.map((link) => {
+                const active = location.pathname === link.to;
+                return (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-center px-2 py-2 rounded-lg text-xs font-medium transition-all duration-150 ${
+                      active
+                        ? "gradient-primary text-primary-foreground"
+                        : "bg-secondary text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </div>
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center justify-center w-full py-2 rounded-lg gradient-primary text-primary-foreground text-xs font-semibold hover:opacity-90 transition-opacity"
+            >
+              Get Started
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
+
     </nav>
   );
 };

@@ -1,64 +1,42 @@
 import { Link } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
 
-const Footer = () => {
-  return (
-    <footer className="bg-secondary border-t border-border">
-      <div className="container mx-auto px-4 sm:px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div>
-            <Link to="/" className="flex items-center gap-2 text-xl font-bold text-foreground mb-4">
-              KipmayAI
-              <span className="w-2 h-2 rounded-full bg-primary inline-block" />
-            </Link>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              Transform your customer support with intelligent WhatsApp bots.
-            </p>
-            <p className="text-muted-foreground text-sm">Made in Kenya 🇰🇪</p>
-          </div>
+const Footer = () => (
+  <footer className="bg-secondary border-t border-border">
+    <div className="container mx-auto px-4 sm:px-6 py-5">
 
-          <div>
-            <h4 className="text-foreground font-semibold mb-4">Product</h4>
-            <ul className="space-y-3">
-              <li><Link to="/how-it-works" className="text-muted-foreground text-sm hover:text-primary transition-colors">How it Works</Link></li>
-              <li><Link to="/pricing" className="text-muted-foreground text-sm hover:text-primary transition-colors">Pricing</Link></li>
-              <li><Link to="/use-cases" className="text-muted-foreground text-sm hover:text-primary transition-colors">Use Cases</Link></li>
-            </ul>
-          </div>
+      {/* Single row: brand + links + whatsapp */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
 
-          <div>
-            <h4 className="text-foreground font-semibold mb-4">Company</h4>
-            <ul className="space-y-3">
-              <li><Link to="/contact" className="text-muted-foreground text-sm hover:text-primary transition-colors">Contact</Link></li>
-              <li><Link to="/how-it-works#faq" className="text-muted-foreground text-sm hover:text-primary transition-colors">FAQ</Link></li>
-            </ul>
-          </div>
+        {/* Brand */}
+        <Link to="/" className="flex items-center gap-1.5 text-sm font-bold text-foreground flex-shrink-0">
+          Kipmay<span className="text-primary">AI</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block" />
+        </Link>
 
-          <div>
-            <h4 className="text-foreground font-semibold mb-4">Legal</h4>
-            <ul className="space-y-3">
-              <li><Link to="/privacy-policy" className="text-muted-foreground text-sm hover:text-primary transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms-of-service" className="text-muted-foreground text-sm hover:text-primary transition-colors">Terms of Service</Link></li>
-              <li><Link to="/data-deletion" className="text-muted-foreground text-sm hover:text-primary transition-colors">Data Deletion</Link></li>
-            </ul>
-          </div>
+        {/* All links inline */}
+        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
+          <Link to="/how-it-works" className="hover:text-primary transition-colors">How it Works</Link>
+          <Link to="/pricing" className="hover:text-primary transition-colors">Pricing</Link>
+          <Link to="/use-cases" className="hover:text-primary transition-colors">Use Cases</Link>
+          <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
+          <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy</Link>
+          <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms</Link>
+          <Link to="/data-deletion" className="hover:text-primary transition-colors">Data Deletion</Link>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground text-sm">© {new Date().getFullYear()} KipmayAI. All rights reserved.</p>
-          <a
-            href="https://wa.me/254700000000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:text-primary/80 transition-colors"
-            aria-label="WhatsApp"
-          >
-            <MessageCircle size={24} />
+        {/* Right: WA + copyright */}
+        <div className="flex items-center gap-3 flex-shrink-0">
+          <p className="text-xs text-muted-foreground/50">© {new Date().getFullYear()} · 🇰🇪</p>
+          <a href="https://wa.me/254796911236" target="_blank" rel="noopener noreferrer"
+            className="text-primary hover:opacity-70 transition-opacity" aria-label="WhatsApp">
+            <MessageCircle size={15} />
           </a>
         </div>
       </div>
-    </footer>
-  );
-};
+
+    </div>
+  </footer>
+);
 
 export default Footer;
